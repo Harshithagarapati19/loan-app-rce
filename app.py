@@ -1,4 +1,4 @@
-import streamlist as st
+import streamlit as st
 import joblib
 clf=joblib.load('loan_data1 (3).joblib')
 g=st.number_input('Enter Gender 0:Male 1:Female')
