@@ -6,7 +6,7 @@ m=st.number_input('Enter Martial status 0:no 1:yes')
 ai=st.number_input('Enter Applicant Income in thousands')
 la=st.number_input('Enter Loan amount in thousands')
 if st.button('PREDICT'):
-    prediction=clf.predict([[g,m,aif,la]])
+    prediction=clf.predict([[g,m,ai,la]])
     if prediction=='y':
         st.text('Loan is approved')
     else:
